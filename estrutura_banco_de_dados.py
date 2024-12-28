@@ -13,6 +13,7 @@
 # Importando os Módulos que serão utilizados
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 
 # Passo a passo a ser seguido:
@@ -83,8 +84,7 @@ def inicializar_banco():
 # Obs.1: a função só será chamada quando rodarmos o arquivo 9-estrutura_banco_de_dados.py diretamente
 # Obs.2: caso contrário ela não será chamada e não teremos o Banco de Dados sendo apagado e reconstruído a cada momento que fizermos uso da classe db
 if __name__ == '__main__':
-    app = Flask(__name__)
-    app.run(host='0.0.0.0', port=8080, debug=False)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=False)
     inicializar_banco()
 
 '''
