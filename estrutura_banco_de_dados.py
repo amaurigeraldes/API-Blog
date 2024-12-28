@@ -82,7 +82,8 @@ def inicializar_banco():
 # 2) Para garantir que a função inicializar_banco() só será chamada quando quisermos
 # Obs.1: a função só será chamada quando rodarmos o arquivo 9-estrutura_banco_de_dados.py diretamente
 # Obs.2: caso contrário ela não será chamada e não teremos o Banco de Dados sendo apagado e reconstruído a cada momento que fizermos uso da classe db
-if __name__ == '__main__':
+if __name__ == '__main__': 
+    app.run(host='0.0.0.0', port=8080, debug=False)
     inicializar_banco()
 
 
