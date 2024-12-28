@@ -2,12 +2,13 @@
 
 # Documentação sobre Models no SQLAlchemy: https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/models/
 
-# Instalando a biblioteca
+# Instalando as bibliotecas
 # pip install flask-sqlalchemy
+# pip install psycopg2-binary
 
 # Importando os Módulos que serão utilizados
-from flask import Flask                    # Criação da API
-from flask_sqlalchemy import SQLAlchemy    # Criação do Banco de Dados
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 
 # Passo a passo a ser seguido:
