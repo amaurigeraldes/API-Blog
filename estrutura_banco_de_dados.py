@@ -5,6 +5,10 @@
 # Instalando as bibliotecas
 # pip install flask-sqlalchemy
 # pip install psycopg2-binary
+# pip install gunicorn
+
+# Criando o arquivo requirements.txt com todos os requisitos da aplicação
+# pip freeze > requirements.txt
 
 # Importando os Módulos que serão utilizados
 from flask import Flask
